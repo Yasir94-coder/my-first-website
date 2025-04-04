@@ -26,11 +26,28 @@ p {
   box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Add a subtle shadow */
 }
 
-/* === NEW RULE ADDED BELOW === */
+/* Make images responsive in container */
 .container img {
   max-width: 100%; /* Image maximum width is 100% of its container */
   height: auto;    /* Maintain aspect ratio automatically */
   display: block;  /* Helps prevent extra space below image sometimes */
   margin-left: auto; /* Optional: Center image if container is wider */
   margin-right: auto;/* Optional: Center image if container is wider */
+}
+
+/* === NEW LIST STYLES ADDED BELOW === */
+
+/* Style the list container (the ul) inside .container */
+.container ul {
+  list-style-type: none; /* Remove the default bullet points */
+  padding-left: 0;       /* Remove the default browser indentation */
+  margin-top: 5px;       /* Add a little space below the h2 */
+}
+
+/* Style individual list items (the li) inside .container */
+.container li {
+  padding: 5px 0px 5px 15px; /* Add padding: top/bottom 5px, left 15px */
+  margin-bottom: 5px;       /* Add a little space below each item */
+  border-left: 4px solid #000080; /* Add a solid navy left border */
+  background-color: #f8f8f8; /* Slightly off-white background for items */
 }

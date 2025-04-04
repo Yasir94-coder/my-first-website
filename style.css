@@ -1,53 +1,88 @@
 body {
-  background-color: #f0f8ff; /* Light alice blue background */
-  font-family: sans-serif;  /* Use a standard sans-serif font */
-  line-height: 1.6;       /* Add some spacing between lines of text */
-  margin: 20px;           /* Add some margin around the whole body */
+  /* Changed background slightly, removed default margin */
+  background-color: #f4f7f6; 
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; /* Nicer default font stack */
+  line-height: 1.6;
+  margin: 0; /* Remove browser default margin */
+  padding: 20px; /* Add padding around the body instead of margin */
+  color: #333333; /* Set default text color for body */
 }
 
-h1 {
-  color: #000080; /* Navy blue color for the main heading */
+.container {
+  max-width: 800px; 
+  margin: 30px auto; /* Simplified margin: 30px top/bottom, auto left/right for centering */
+  padding: 40px;      /* Slightly increased padding inside */
+  background-color: #ffffff; 
+  /* Changed border to be more subtle */
+  border: 1px solid #e0e0e0; 
+  /* Added rounded corners */
+  border-radius: 8px; 
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.05); /* Softened shadow */
+}
+
+h1, h2 { /* Target both h1 and h2 */
+  color: #1a252f; /* Darker, less saturated blue */
+  margin-top: 0; /* Remove default top margin from headings often */
 }
 
 p {
-  color: #333333; /* Dark grey color for paragraph text */
-} /* <-- End of p rule */
+  color: #444444; /* Slightly adjusted paragraph color */
+  margin-bottom: 1em; /* Standard paragraph spacing */
+} 
 
-/* Start container rule on a new line */
-.container {
-  max-width: 800px; /* Limit the maximum width of the content */
-  margin-top: 20px; /* Add some space above the container */
-  margin-bottom: 20px; /* Add some space below the container */
-  margin-left: auto;  /* These two lines work together */
-  margin-right: auto; /* to center the container horizontally */
-  padding: 30px;      /* Add space INSIDE the container, between content and edge */
-  background-color: #ffffff; /* Give it a white background */
-  border: 1px solid #cccccc; /* Add a light grey border */
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Add a subtle shadow */
+/* Basic Link Styling */
+a {
+  color: #0056b3; /* A standard link blue */
+  text-decoration: none; /* Remove the default underline */
+  /* Add the transition property for smoothness */
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out; 
 }
 
-/* Make images responsive in container */
+/* Link Hover State Styling */
+a:hover {
+  color: #003d80; /* Darken link color on hover */
+  text-decoration: underline; /* Add underline back on hover (optional) */
+}
+
+/* Container Image Styling (no changes from before) */
 .container img {
-  max-width: 100%; /* Image maximum width is 100% of its container */
-  height: auto;    /* Maintain aspect ratio automatically */
-  display: block;  /* Helps prevent extra space below image sometimes */
-  margin-left: auto; /* Optional: Center image if container is wider */
-  margin-right: auto;/* Optional: Center image if container is wider */
+  max-width: 100%; 
+  height: auto;    
+  display: block;  
+  margin-left: auto; 
+  margin-right: auto;
+  margin-top: 1em; /* Add some space above image */
+  margin-bottom: 1em; /* Add some space below image */
 }
 
-/* === NEW LIST STYLES ADDED BELOW === */
-
-/* Style the list container (the ul) inside .container */
+/* List Styling (no changes from before) */
 .container ul {
-  list-style-type: none; /* Remove the default bullet points */
-  padding-left: 0;       /* Remove the default browser indentation */
-  margin-top: 5px;       /* Add a little space below the h2 */
+  list-style-type: none; 
+  padding-left: 0;       
+  margin-top: 5px;       
 }
 
-/* Style individual list items (the li) inside .container */
 .container li {
-  padding: 5px 0px 5px 15px; /* Add padding: top/bottom 5px, left 15px */
-  margin-bottom: 5px;       /* Add a little space below each item */
-  border-left: 4px solid #000080; /* Add a solid navy left border */
-  background-color: #f8f8f8; /* Slightly off-white background for items */
+  padding: 5px 0px 5px 15px; 
+  margin-bottom: 5px;       
+  border-left: 4px solid #1a252f; /* Match heading color */
+  background-color: #f8f8f8; 
+}
+
+/* Footer Styling */
+footer {
+  margin-top: 30px; /* Add space above footer */
+  padding-top: 15px; /* Add space inside footer, above text */
+  border-top: 1px solid #e0e0e0; /* Separator line */
+  text-align: center; /* Center footer text */
+  font-size: 0.9em; /* Slightly smaller text */
+  color: #777777; /* Grey text color */
+}
+
+/* Optional: Style footer links differently if needed later */
+footer a {
+   color: #555555; 
+}
+footer a:hover {
+   color: #000000;
 }

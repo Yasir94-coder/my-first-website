@@ -1,0 +1,14 @@
+body {
+    background-color: #f0f8ff; /* Light alice blue background */
+    font-family: sans-serif;  /* Use a standard sans-serif font */
+    line-height: 1.6;       /* Add some spacing between lines of text */
+    margin: 20px;           /* Add some margin around the whole body */
+  }
+  
+  h1 {
+    color: #000080; /* Navy blue color for the main heading */
+  }
+  
+  p {
+    color: #333333; /* Dark grey color for paragraph text */
+  }

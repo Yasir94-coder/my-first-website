@@ -1,14 +1,27 @@
 body {
-    background-color: #f0f8ff; /* Light alice blue background */
-    font-family: sans-serif;  /* Use a standard sans-serif font */
-    line-height: 1.6;       /* Add some spacing between lines of text */
-    margin: 20px;           /* Add some margin around the whole body */
-  }
-  
-  h1 {
-    color: #000080; /* Navy blue color for the main heading */
-  }
-  
-  p {
-    color: #333333; /* Dark grey color for paragraph text */
-  }
+  background-color: #f0f8ff; /* Light alice blue background */
+  font-family: sans-serif;  /* Use a standard sans-serif font */
+  line-height: 1.6;       /* Add some spacing between lines of text */
+  margin: 20px;           /* Add some margin around the whole body */
+}
+
+h1 {
+  color: #000080; /* Navy blue color for the main heading */
+}
+
+p {
+  color: #333333; /* Dark grey color for paragraph text */
+} /* <-- End of p rule */
+
+/* Start container rule on a new line */
+.container {
+  max-width: 800px; /* Limit the maximum width of the content */
+  margin-top: 20px; /* Add some space above the container */
+  margin-bottom: 20px; /* Add some space below the container */
+  margin-left: auto;  /* These two lines work together */
+  margin-right: auto; /* to center the container horizontally */
+  padding: 30px;      /* Add space INSIDE the container, between content and edge */
+  background-color: #ffffff; /* Give it a white background */
+  border: 1px solid #cccccc; /* Add a light grey border */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Add a subtle shadow */
+}

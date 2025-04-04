@@ -25,3 +25,12 @@ p {
   border: 1px solid #cccccc; /* Add a light grey border */
   box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Add a subtle shadow */
 }
+
+/* === NEW RULE ADDED BELOW === */
+.container img {
+  max-width: 100%; /* Image maximum width is 100% of its container */
+  height: auto;    /* Maintain aspect ratio automatically */
+  display: block;  /* Helps prevent extra space below image sometimes */
+  margin-left: auto; /* Optional: Center image if container is wider */
+  margin-right: auto;/* Optional: Center image if container is wider */
+}
